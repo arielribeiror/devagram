@@ -4,6 +4,7 @@ import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import Button from "./src/components/Button";
 import Input from "./src/components/Input";
+import Avatar from "./src/components/Avatar";
 
 export default function App() {
   const [email, setEmail] = useState<string>("");
@@ -39,7 +40,7 @@ export default function App() {
       />
       <Button
         onPress={() => {}}
-        placeholder="Clique aqui"
+        placeholder="Entrar"
         loading={false}
         disabled={false}
       />

@@ -1,9 +1,20 @@
-import { Image, View } from "react-native";
+import { Image } from "react-native";
+import styles from "./styles";
+import { IAvatar } from "./types";
 
-const Avatar = () => {
+const Avatar = (props: IAvatar) => {
   return (
-    <View>
-      <Image source={require("../../assets/img/")} />
-    </View>
+    <>
+      {props.image ? (
+        <Image style={styles.containerAvatar} source={{ uri: props.image }} />
+      ) : (
+        <Image
+          style={styles.containerAvatar}
+          source={require("../../assets/img/avatar.png")}
+        />
+      )}
+    </>
   );
 };
+
+export default Avatar;

@@ -1,11 +1,10 @@
-import { Text, TouchableOpacity, ActivityIndicator, View } from "react-native";
+import { Text, TouchableOpacity, ActivityIndicator } from "react-native";
 import { IButton } from "./types";
-import { colors } from "../../../app.json";
 import styles from "./styles";
 
 const Button = (props: IButton) => {
   return (
-    <View style={styles.containerButton}>
+    <>
       <TouchableOpacity
         onPress={props.onPress}
         disabled={props.disabled}
@@ -21,7 +20,7 @@ const Button = (props: IButton) => {
           <Text style={styles.text}>{props.placeholder}</Text>
         )}
       </TouchableOpacity>
-    </View>
+    </>
   );
 };
 

@@ -4,9 +4,6 @@ import { colors } from "../../../app.json";
 const { height, width } = Dimensions.get("screen");
 
 const styles = StyleSheet.create({
-  containerButton: {
-    marginTop: height * 0.1,
-  },
   button: {
     width: width - 64,
     height: 49,

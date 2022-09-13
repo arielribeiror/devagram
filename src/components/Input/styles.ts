@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
   containerInput: {
     width: width - 64,
     height: 49,
+    marginVertical: 6,
     borderWidth: 2,
     borderColor: colors.light,
     borderRadius: 6,
